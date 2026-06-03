@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Call type (INCOMING/OUTGOING)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        android:hint="Start Time">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStartTime"
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="End Time">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEndTime"
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Note (optional)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lnCall"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/outline_call_log_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnTask"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/baseline_task_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnMeeting"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/outline_meeting_room_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meeting"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/lnLead"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/lead"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lead"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnContact"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/contact"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnDeal"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/deal"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deal"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
